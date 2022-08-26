@@ -15,10 +15,8 @@ class Login extends React.Component {
     const minPasswordLength = 6;
     const { loginEmail, loginPassword } = this.state;
     if (emailRegex.test(loginEmail) && loginPassword.length >= minPasswordLength) {
-      console.log('sucesso');
       this.setState({ isLoginButtonDisabled: false });
     } else {
-      console.log('deu ruim');
       this.setState({ isLoginButtonDisabled: true });
     }
   };
@@ -56,7 +54,7 @@ class Login extends React.Component {
           <label htmlFor="passwordLogin">
             Senha:
             <input
-              type="text"
+              type="password"
               name="loginPassword"
               data-testid="password-input"
               id="passwordLogin"
