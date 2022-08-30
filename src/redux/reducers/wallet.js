@@ -1,6 +1,8 @@
 import { requestCurency,
   receiveCurrencySuccess,
   receiveCurencyFailure,
+  addExpense,
+  addExpenseSum,
 } from '../actions/index';
 
 const INITIAL_STATE = {
@@ -8,6 +10,8 @@ const INITIAL_STATE = {
   expenses: [],
   editor: false,
   idToEdit: 0,
+  id: 0,
+  addExpenseSum: [],
 };
 
 const getWalletReducer = (state = INITIAL_STATE, action) => {
@@ -22,6 +26,15 @@ const getWalletReducer = (state = INITIAL_STATE, action) => {
   case receiveCurencyFailure: return {
     ...state,
     error: action.error,
+  };
+  case addExpense: return {
+    ...state,
+    expenses: [...state.expenses, { id: state.id, ...action.payload }],
+    id: state.id + 1,
+  };
+  case addExpenseSum: return {
+    ...state,
+    addExpenseSum: [...state.addExpenseSum, ...action.payload],
   };
   default: return state;
   }

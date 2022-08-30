@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
+import { string } from 'prop-types';
 
 class Header extends Component {
-  state = {
-    spendingList: 0,
-  };
-
   render() {
-    const { spendingList } = this.state;
-    const { email } = this.props;
+    const { email, expenseValue } = this.props;
+    const sumHeaderValue = expenseValue.reduce((acc, curr) => acc + Number(curr), 0);
 
     return (
       <div>
@@ -19,7 +15,7 @@ class Header extends Component {
 
         <div className="spending-list">
           <p data-testid="total-field">
-            {`Despesa Total = R$ ${spendingList}`}
+            { sumHeaderValue }
           </p>
         </div>
 
@@ -36,11 +32,12 @@ class Header extends Component {
 function mapStateToProps(state) {
   return {
     email: state.user.email,
+    expenseValue: state.wallet.addExpenseSum,
   };
 }
 
 Header.propTypes = {
-  email: PropTypes.string.isRequired,
-};
+  email: string,
+}.isRequired;
 
 export default connect(mapStateToProps)(Header);

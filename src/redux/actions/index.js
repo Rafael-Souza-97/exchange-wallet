@@ -5,6 +5,8 @@ export const walletInfos = 'WALLET_INFOS';
 export const requestCurency = 'REQUEST_CURRENCY';
 export const receiveCurrencySuccess = 'RECEIVE_CURRENCY_SUCCESS';
 export const receiveCurencyFailure = 'REQUEST_CURRENCY_FAILURE';
+export const addExpense = 'ADD_EXPENSE';
+export const addExpenseSum = 'ADD_EXPENSE_SUM';
 
 export function userInfosAction(payload) {
   return {
@@ -22,7 +24,7 @@ const receiveApiCurrencySuccess = (payload) => ({
   payload,
 });
 
-const receiveISSLocationFailure = (error) => ({
+const receiveApiCurencyFailure = (error) => ({
   type: receiveCurencyFailure,
   error,
 });
@@ -35,6 +37,20 @@ export const fetchCurrency = () => async (dispatch) => {
 
     dispatch(receiveApiCurrencySuccess(json));
   } catch (error) {
-    dispatch(receiveISSLocationFailure(error));
+    dispatch(receiveApiCurencyFailure(error));
   }
 };
+
+export function addExpenseAction(payload) {
+  return {
+    type: addExpense,
+    payload,
+  };
+}
+
+export function addHeaderSum(payload) {
+  return {
+    type: addExpenseSum,
+    payload,
+  };
+}
