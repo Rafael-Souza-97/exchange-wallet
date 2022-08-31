@@ -7,6 +7,7 @@ export const receiveCurrencySuccess = 'RECEIVE_CURRENCY_SUCCESS';
 export const receiveCurencyFailure = 'REQUEST_CURRENCY_FAILURE';
 export const addExpense = 'ADD_EXPENSE';
 export const addExpenseSum = 'ADD_EXPENSE_SUM';
+export const deleteExpense = 'DELETE_EXPENSE';
 
 export function userInfosAction(payload) {
   return {
@@ -51,6 +52,13 @@ export function addExpenseAction(payload) {
 export function addHeaderSum(payload) {
   return {
     type: addExpenseSum,
+    payload,
+  };
+}
+
+export function removeExpense(payload) {
+  return {
+    type: deleteExpense,
     payload,
   };
 }

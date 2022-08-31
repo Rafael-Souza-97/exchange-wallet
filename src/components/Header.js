@@ -5,7 +5,11 @@ import { string } from 'prop-types';
 class Header extends Component {
   render() {
     const { email, expenseValue } = this.props;
-    const sumHeaderValue = expenseValue.reduce((acc, curr) => acc + Number(curr), 0);
+    const sumHeaderValue = expenseValue.reduce((acc, curr) => {
+      const { value, currency, exchangeRates } = curr;
+      const currencyValue = exchangeRates[currency].ask;
+      return acc + (value * currencyValue);
+    }, 0);
 
     return (
       <div>
@@ -15,7 +19,7 @@ class Header extends Component {
 
         <div className="spending-list">
           <p data-testid="total-field">
-            { sumHeaderValue }
+            { sumHeaderValue.toFixed(2) }
           </p>
         </div>
 
@@ -32,7 +36,7 @@ class Header extends Component {
 function mapStateToProps(state) {
   return {
     email: state.user.email,
-    expenseValue: state.wallet.addExpenseSum,
+    expenseValue: state.wallet.expenses,
   };
 }
 

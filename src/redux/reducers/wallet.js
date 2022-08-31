@@ -3,6 +3,7 @@ import { requestCurency,
   receiveCurencyFailure,
   addExpense,
   addExpenseSum,
+  deleteExpense,
 } from '../actions/index';
 
 const INITIAL_STATE = {
@@ -35,6 +36,10 @@ const getWalletReducer = (state = INITIAL_STATE, action) => {
   case addExpenseSum: return {
     ...state,
     addExpenseSum: [...state.addExpenseSum, ...action.payload],
+  };
+  case deleteExpense: return {
+    ...state,
+    expenses: [...state.expenses.filter((item) => item.id !== Number(action.payload))],
   };
   default: return state;
   }
