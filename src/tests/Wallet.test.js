@@ -27,4 +27,12 @@ describe('Teste a page "Wallet.js"', () => {
     const currencySelect = screen.getByLabelText(/moeda/i);
     expect(currencySelect).toBeInTheDocument();
   });
+
+  test('Testa se exite o campo de valor total da despesa', () => {
+    renderWthRouterAndRedux(<App />, { initialEntries: ['/carteira'] });
+    const expenseTotalTitle = screen.getByText(/despesa total/i);
+    expect(expenseTotalTitle).toBeInTheDocument();
+    const expenseTotalValue = screen.getByTestId('total-field');
+    expect(expenseTotalValue).toBeInTheDocument();
+  });
 });

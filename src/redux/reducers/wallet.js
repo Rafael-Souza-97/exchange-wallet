@@ -4,6 +4,8 @@ import { requestCurency,
   addExpense,
   addExpenseSum,
   deleteExpense,
+  editExpenseState,
+  editSubmitExpenseState,
 } from '../actions/index';
 
 const INITIAL_STATE = {
@@ -12,7 +14,7 @@ const INITIAL_STATE = {
   editor: false,
   idToEdit: 0,
   id: 0,
-  addExpenseSum: [],
+  objectEdit: {},
 };
 
 const getWalletReducer = (state = INITIAL_STATE, action) => {
@@ -40,6 +42,23 @@ const getWalletReducer = (state = INITIAL_STATE, action) => {
   case deleteExpense: return {
     ...state,
     expenses: [...state.expenses.filter((item) => item.id !== Number(action.payload))],
+  };
+  case editExpenseState: return {
+    ...state,
+    editor: true,
+    idToEdit: Number(action.id),
+    objectEdit: {
+      ...state.expenses.filter((item) => item.id === Number(action.id)),
+    },
+    expenses: [...state.expenses.filter((item) => item.id !== Number(action.id))],
+  };
+  case editSubmitExpenseState: return {
+    ...state,
+    expenses: [...state.expenses, { id: state.idToEdit, ...action.payload }]
+      .sort((a, b) => a.id - b.id),
+    editor: false,
+    idToEdit: 0,
+    objectEdit: {},
   };
   default: return state;
   }

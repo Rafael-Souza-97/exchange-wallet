@@ -3,6 +3,8 @@ import userEvent from '@testing-library/user-event';
 import renderWthRouterAndRedux from './helpers/renderWith';
 import App from '../App';
 
+const testEmail = 'test.test@gmail.com';
+
 describe('Teste a page "Login.js"', () => {
   test('Testa se o url da tela de login é "/"', () => {
     const { history } = renderWthRouterAndRedux(<App />);
@@ -56,7 +58,7 @@ describe('Teste a page "Login.js"', () => {
 
     expect(loginButton).toBeDisabled();
 
-    userEvent.type(loginEmail, 'test.test@gmail.com');
+    userEvent.type(loginEmail, testEmail);
     expect(loginButton).toBeDisabled();
 
     userEvent.type(loginPassword, '123456');
@@ -64,7 +66,7 @@ describe('Teste a page "Login.js"', () => {
   });
 
   test('Testa se ao clicar no botão "Entrar", a rota muda para "/carteira"', () => {
-    const { history } = renderWthRouterAndRedux(<App />);
+    const { history, store } = renderWthRouterAndRedux(<App />);
 
     const loginButton = screen.getByRole('button', { name: /entrar/i });
     const loginEmail = screen.getByLabelText(/email/i);
@@ -72,7 +74,7 @@ describe('Teste a page "Login.js"', () => {
 
     expect(loginButton).toBeDisabled();
 
-    userEvent.type(loginEmail, 'test.test@gmail.com');
+    userEvent.type(loginEmail, testEmail);
     expect(loginButton).toBeDisabled();
 
     userEvent.type(loginPassword, '123456');
@@ -81,5 +83,8 @@ describe('Teste a page "Login.js"', () => {
     userEvent.click(loginButton);
     const { pathname } = history.location;
     expect(pathname).toBe('/carteira');
+
+    const { user } = store.getState();
+    expect(user.email).toBe(testEmail);
   });
 });
