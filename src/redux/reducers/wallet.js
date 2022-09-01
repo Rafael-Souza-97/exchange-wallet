@@ -1,8 +1,6 @@
 import { requestCurency,
   receiveCurrencySuccess,
-  receiveCurencyFailure,
   addExpense,
-  addExpenseSum,
   deleteExpense,
   editExpenseState,
   editSubmitExpenseState,
@@ -26,18 +24,10 @@ const getWalletReducer = (state = INITIAL_STATE, action) => {
     ...state,
     currencies: Object.keys(action.payload).filter((currency) => currency !== 'USDT'),
   };
-  case receiveCurencyFailure: return {
-    ...state,
-    error: action.error,
-  };
   case addExpense: return {
     ...state,
     expenses: [...state.expenses, { id: state.id, ...action.payload }],
     id: state.id + 1,
-  };
-  case addExpenseSum: return {
-    ...state,
-    addExpenseSum: [...state.addExpenseSum, ...action.payload],
   };
   case deleteExpense: return {
     ...state,
