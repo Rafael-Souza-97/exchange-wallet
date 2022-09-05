@@ -21,8 +21,10 @@ os conhecimentos sobre React e Redux.
 
 - React
 - Redux
-- RTL
+- React Testing Library
+- Jest
 - API
+- Scrum & Kanban
 - Zoom
 - Slack
 - VsCode
