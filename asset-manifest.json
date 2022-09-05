@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "./static/css/main.dfa977e1.css",
+    "main.js": "./static/js/main.b2031b98.js",
+    "static/media/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg": "./static/media/glenn-carstens-peters-P1qyEf1g0HU-unsplash.a389a6ed5ffc321d47f1.jpg",
+    "index.html": "./index.html",
+    "main.dfa977e1.css.map": "./static/css/main.dfa977e1.css.map",
+    "main.b2031b98.js.map": "./static/js/main.b2031b98.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dfa977e1.css",
+    "static/js/main.b2031b98.js"
+  ]
+}
