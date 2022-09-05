@@ -29,6 +29,8 @@ os conhecimentos sobre React e Redux.
 - Git e GitHub
 - Linux - Ubuntu
 
+## Site: https://exchange-wallet-bay.vercel.app/
+
 
 https://user-images.githubusercontent.com/99055008/188350971-f9665566-9b21-44f7-90f3-84c0e5c9c01c.mp4
 
