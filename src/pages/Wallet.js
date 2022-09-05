@@ -7,7 +7,7 @@ class Wallet extends React.Component {
   render() {
     return (
       <>
-        <header>
+        <header className="wallet-header">
           <Header />
         </header>
 
@@ -17,6 +17,7 @@ class Wallet extends React.Component {
             <Table />
           </section>
         </main>
+
       </>
     );
   }

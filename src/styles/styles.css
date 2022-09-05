@@ -1,0 +1,500 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family:'Source Sans Pro', sans-serif;
+}
+
+.container-login {
+  display: flex;
+  min-height: 100vh;
+}
+
+.form {
+  min-width: 100%;
+  padding: 25px 50px;
+}
+
+.title-logo {
+  opacity: 80%;
+  color: gray;
+  font-family:'Source Sans Pro', sans-serif;
+  font-size: 22px;
+  font-weight: 2px;
+  margin: 25px 0px 175px;
+}
+
+.title-logo:hover {
+  opacity: 100%;
+}
+
+strong {
+  color: white;
+  font-family:'Source Sans Pro', sans-serif;
+}
+
+.title-login {
+  color: white;
+  font-family:'Source Sans Pro', sans-serif;
+  font-size: 35px;
+  font-weight: 2px;
+  margin: 25px 0px;
+}
+
+.signIn {
+  display: flex;
+  min-width: 30%;
+  background-color: black;
+  color: white;
+  font-size: medium;
+}
+
+.icon-input {
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  opacity: 40%;
+}
+
+.icon-input:active {
+  opacity: 100%;
+}
+
+.input {
+  background-color: black;
+  color: rgb(210, 210, 210);
+}
+
+.input:focus {
+  border-color: white;
+}
+
+.input::placeholder {
+  border-color: white;
+  color: rgb(106, 106, 106);
+}
+
+.input-text {
+  position: relative;
+  margin: 30px 0px;
+}
+
+.input-text2 {
+  position: relative;
+  margin: 30px 0px;
+  margin-bottom: 20px;
+}
+
+.button {
+  width: 100%;
+  height: 45px;
+  border-radius: 7px;
+  margin-bottom: 25px;
+}
+
+.button:active {
+  width: 100%;
+  height: 50px;
+  border-radius: 7px;
+  margin-bottom: 25px;
+  -moz-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.forgot {
+  width: 150px;
+  opacity: 80%;
+  cursor: pointer;
+  margin-bottom: 30px;
+  color: lightblue;
+}
+
+.login-image {
+  background-image: url('../assets/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg');
+  background-size: cover;
+  width: 100%;
+  background-color: black;
+  opacity: 75%;
+}
+
+.signIn-descripion {
+  font-family:'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: bold;
+  margin: 350px 40px 25px 150px;
+}
+
+.title {
+  font-family:'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: bold;
+  margin: 180px 40px 25px 50px;
+  opacity: 80%;
+  font-size: 52px;
+}
+
+.sub {
+  font-family:'Source Sans Pro', sans-serif;
+  color: white;
+  font-size: 29px;
+  margin: 30px 40px 0px 53px;
+  opacity: 70%;
+}
+
+.button-saibaMais {
+  width: 130px;
+  padding: 10px 15px;
+  border-radius: 7px;
+  margin: 35px 0px 0px 390px;
+  font-size: 15px;
+  opacity: 75%;
+}
+
+.button-saibaMais:hover {
+  background-color: rgb(250, 250, 250);
+  opacity: 95%;
+}
+
+.button-saibaMais:active {
+  -moz-transform: scale(1.04);
+	-webkit-transform: scale(1.04);
+	transform: scale(1.04);
+}
+
+.login-subscribe {
+  font-family:'Source Sans Pro', sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 80%;
+  margin: 3.5% 0 0 80%;
+  opacity: 75%;
+  cursor: pointer;
+}
+
+.login-subscribe:hover {
+  opacity: 100%;
+}
+
+.icon-subscribe {
+  position: absolute;
+  margin: 2px 0px 0px 5px;
+  opacity: 70%;
+}
+
+.icon-subscribe:active {
+  opacity: 100%;
+}
+
+.wallet-header {
+  background-image: black;
+}
+
+.headerWallet {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to right, rgb(70, 70, 70), black, black, black, black, black, black );
+  justify-content: space-between;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.7);
+  margin-bottom: 5px;
+}
+
+.title-containerWallet {
+  padding: 0px 0px 0px 80px;
+}
+
+.title-logoWallet {
+  opacity: 80%;
+  color: rgb(169, 169, 169);
+  font-family:'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  font-weight: 2px;
+  cursor: pointer;
+}
+
+.title-logoWallet:hover {
+  opacity: 100%;
+}
+
+.total-value {
+  display: flex;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.spending-list {
+  margin: 0px 15px;
+  position: relative;
+}
+
+.total-field {
+  display: flex;
+  color: white;
+  font-size: 18px;
+  font-family:'Source Sans Pro', sans-serif;
+  border: 1px soloid red;
+}
+
+.icon-cart {
+  position: absolute;
+  right: 100%;
+  top: 7%;
+  margin-right: 15px;
+  opacity: 50%;
+}
+
+.icon-cart:active {
+  opacity: 100%;
+}
+
+.exchange-type {
+  margin-top: 4px;
+  opacity: 70%;
+}
+
+.exchange-type:active {
+  opacity: 100%;
+}
+
+.email{
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  margin-right: 80px;
+  opacity: 90%;
+  font-family:'Source Sans Pro', sans-serif;
+  cursor: pointer;
+}
+
+.icon-email {
+  position: absolute;
+  right: 100%;
+  margin-right: 7px;
+  opacity: 60%;
+}
+
+.icon-email:active {
+  opacity: 100%;
+}
+
+.wallet-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80px;
+  padding: 20px;
+  border:0;
+  background-color: rgb(250, 250, 250);
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.09);
+  margin: 10px 30px;
+}
+
+.icon-inputDescription {
+  position: absolute;
+  right: 94%;
+  top: 55%;
+  opacity: 90%;
+}
+
+.icon-inputValue {
+  position: absolute;
+  right: 89%;
+  top: 55%;
+  opacity: 90%;
+}
+
+.icon-inputMoney {
+  position: absolute;
+  right: 61%;
+  top: 55%;
+  opacity: 90%;
+}
+
+.icon-inputPayment {
+  position: absolute;
+  right: 92%;
+  top: 55%;
+  opacity: 90%;
+}
+
+.icon-inputTag {
+  position: absolute;
+  right: 72%;
+  top: 55%;
+  opacity: 80%;
+}
+
+.input-expense {
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 300px;
+}
+
+.input-wallet {
+  font-family: inherit;
+  align-items: center;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid rgb(169, 169, 169);
+  outline: 0;
+  color: black;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 5s;
+  text-align: center; 
+}
+
+.numberInput {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  max-width: 150px;
+  margin-left: 100px;
+}
+
+.numberInput:focus {
+  opacity: 100%;
+}
+
+.expenses-list {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.button-addExpense {
+  width: 140px;
+  padding: 15px 30px;
+  border-radius: 7px;
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+
+.button-addExpense:hover {
+  background-color: rgb(250, 250, 250);
+}
+
+.button-addExpense:active {
+  width: 140px;
+  padding: 15px 30px;
+  border-radius: 7px;
+  margin-bottom: 0px;
+  -moz-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.button-addExpense:focus {
+  border: none;
+}
+
+.tableDiv {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+table {
+  width: 78%;
+}
+
+.button-editExpense {
+  width: 65px;
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 7px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  border: none;
+  background-color: rgb(240, 240, 0);
+  margin-right: 10px;
+}
+
+.button-editExpense:hover {
+  background-color: rgb(255, 255, 0);
+}
+
+.button-editExpense:active {
+  width: 65px;
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 7px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  border: none;
+  background-color: rgb(240, 240, 0);
+  margin-right: 10px;
+  -moz-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.button-removeExpense {
+  width: 65px;
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 7px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  border: none;
+  background-color: rgb(225, 0, 0);
+  color: white;
+  margin-right: 10px;
+}
+
+.button-removeExpense:hover {
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+.button-removeExpense:active {
+  width: 65px;
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 7px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  border: none;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  margin-right: 10px;
+  -moz-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.button-addEditExpense {
+  width: 140px;
+  padding: 15px 30px;
+  border-radius: 7px;
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+
+.button-addEditExpense:hover {
+  background-color: rgb(240, 240, 0);
+}
+
+.button-addEditExpense:active {
+  width: 140px;
+  padding: 15px 30px;
+  border-radius: 7px;
+  margin-bottom: 0px;
+  -moz-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.button-addEditExpense:focus {
+  border: none;
+}
