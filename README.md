@@ -21,8 +21,6 @@ os conhecimentos sobre React e Redux.
 
 - React
 - Redux
-- React Testing Library
-- Jest
 - [API](https://economia.awesomeapi.com.br/json/all)
 - Nodejs
 - React-Icons
@@ -33,6 +31,11 @@ os conhecimentos sobre React e Redux.
 - VsCode
 - Git e GitHub
 - Linux - Ubuntu
+
+### Testes
+
+- React Testing Library - RTL
+- Jest
 
 <br>
 
