@@ -7,7 +7,7 @@ os conhecimentos sobre React e Redux.
 
 ## Autor
 
-- [@Rafael-Souza-97](https://github.com/Rafael-Souza-97)
+- [Rafael Souza](https://github.com/Rafael-Souza-97)
 
 
 ## Referência
