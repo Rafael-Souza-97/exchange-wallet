@@ -21,6 +21,9 @@ os conhecimentos sobre React e Redux.
 
 - React
 - Redux
+- Javascript
+- CSS
+- JSX
 - [API](https://economia.awesomeapi.com.br/json/all)
 - Nodejs
 - React-Icons
