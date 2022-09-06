@@ -24,6 +24,8 @@ os conhecimentos sobre React e Redux.
 - React Testing Library
 - Jest
 - API
+- React-Icons
+- Bulma
 - Scrum & Kanban
 - Zoom
 - Slack
