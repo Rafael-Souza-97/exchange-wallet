@@ -23,7 +23,8 @@ os conhecimentos sobre React e Redux.
 - Redux
 - React Testing Library
 - Jest
-- API
+- [API]((https://economia.awesomeapi.com.br/json/all)
+- Nodejs
 - React-Icons
 - Bulma
 - Scrum & Kanban
