@@ -1,9 +1,13 @@
 # Exchange Wallet (TrybeWallet)
 
-Projeto realiazo utilizando [API de Cotações de Moedase](https://economia.awesomeapi.com.br/json/all).
-Esse projeto foi feito enquanto aluno da [Trybe](https://www.betrybe.com/) para reforçar 
-os conhecimentos sobre React e Redux.
+Aplicação realizada utilizando [API de Cotações de Moedas](https://economia.awesomeapi.com.br/json/all) enquanto aluno da [Trybe](https://www.betrybe.com/) para reforçar os conhecimentos sobre React e Redux. Além disso, foi utilizado Bulma e React-Icons para estilização.
 
+Neste projeto foi desenvolvido uma carteira de controle de gastos com conversor de moedas, onde o usuário é capaz de:
+
+- Adicionar despesas com cotações atualizadas em tempo real;
+- Editar e excluir despesas;
+- Vizualizar os gastos em uma tabela;
+- Vizualizar o total das despesas em Reais (BRL);
 
 ## Autor
 
@@ -39,8 +43,6 @@ os conhecimentos sobre React e Redux.
 
 - React Testing Library - RTL
 - Jest
-
-<br>
 
 ## Site 
 - https://exchange-wallet-bay.vercel.app/
