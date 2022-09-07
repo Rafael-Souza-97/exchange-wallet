@@ -13,41 +13,36 @@ Neste projeto foi desenvolvido uma carteira de controle de gastos com conversor 
 
 - [Rafael Souza](https://github.com/Rafael-Souza-97)
 
-
 ## Referência
 
  - [Trybe](https://www.betrybe.com/)
  - [AwesomeAPI](https://docs.awesomeapi.com.br/api-de-moedas)
- - [Bulma](https://bulma.io/)
- 
 
 ## Tecnologias / Ferramentas utilizadas
 
-- React
-- Redux
-- Javascript
-- CSS
-- JSX
+- [React](https://pt-br.reactjs.org/)
+- [Redux](https://redux.js.org/)
+- [Javascript](https://www.javascript.com/)
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+- [JSX](https://pt-br.reactjs.org/docs/introducing-jsx.html)
 - [API](https://economia.awesomeapi.com.br/json/all)
-- Nodejs
-- React-Icons
-- Bulma
-- Scrum & Kanban
-- Zoom
-- Slack
-- VsCode
-- Git & GitHub
-- Linux - Ubuntu
+- [Nodejs](https://nodejs.org/en/)
+- [React-Icons](https://react-icons.github.io/react-icons/)
+- [Bulma](https://bulma.io/)
+- [Scrum](https://www.scrum.org/) & [Kanban](https://kanbanguides.org/)
+- [Zoom](https://zoom.us/)
+- [Slack](https://slack.com/intl/pt-br/)
+- [VsCode](https://code.visualstudio.com/)
+- [Git](https://git-scm.com/) & [GitHub](https://github.com/)
+- [Linux - Ubuntu](https://ubuntu.com/)
 
 ## Testes
 
-- React Testing Library - RTL
-- Jest
+- [React Testing Library - RTL](https://testing-library.com/docs/react-testing-library/intro/)
+- [Jest](https://jestjs.io/pt-BR/)
 
 ## Site 
 - https://exchange-wallet-bay.vercel.app/
-
-<br>
 
 ## Preview
 
