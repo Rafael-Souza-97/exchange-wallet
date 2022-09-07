@@ -1,6 +1,6 @@
 # Exchange Wallet (TrybeWallet)
 
-Aplicação realizada utilizando [API de Cotações de Moedas](https://economia.awesomeapi.com.br/json/all) enquanto aluno da [Trybe](https://www.betrybe.com/) para reforçar os conhecimentos sobre React e Redux. Além disso, foi utilizado Bulma e React-Icons para estilização.
+Aplicação realizada enquanto aluno da [Trybe](https://www.betrybe.com/) para reforçar os conhecimentos sobre React e Redux. Além disso, foi utilizado  uma [API de Cotações de Moedas](https://economia.awesomeapi.com.br/json/all), e Bulma + React-Icons para estilização.
 
 Neste projeto foi desenvolvido uma carteira de controle de gastos com conversor de moedas, onde o usuário é capaz de:
 
