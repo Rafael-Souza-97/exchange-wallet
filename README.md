@@ -25,6 +25,7 @@ Neste projeto foi desenvolvido uma carteira de controle de gastos com conversor 
 - [Javascript](https://www.javascript.com/)
 - [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
 - [JSX](https://pt-br.reactjs.org/docs/introducing-jsx.html)
+- [Thunk](https://redux.js.org/usage/writing-logic-thunks)
 - [API](https://economia.awesomeapi.com.br/json/all)
 - [Nodejs](https://nodejs.org/en/)
 - [React-Icons](https://react-icons.github.io/react-icons/)
