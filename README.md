@@ -1,6 +1,6 @@
 # Exchange Wallet (TrybeWallet)
 
-Aplicação realizada enquanto aluno da [Trybe](https://www.betrybe.com/) para reforçar os conhecimentos sobre React e Redux. Além disso, foi utilizado  uma [API de Cotações de Moedas](https://economia.awesomeapi.com.br/json/all), e Bulma + React-Icons para estilização.
+Aplicação realizada enquanto aluno da [Trybe](https://www.betrybe.com/) para reforçar os conhecimentos sobre React e Redux. Além disso, foi utilizado  uma [API de Cotações de Moedas](https://economia.awesomeapi.com.br/json/all), e [Bulma](https://bulma.io/) + [React-Icons](https://react-icons.github.io/react-icons/) para estilização.
 
 Neste projeto foi desenvolvido uma carteira de controle de gastos com conversor de moedas, onde o usuário é capaz de:
 
@@ -13,7 +13,7 @@ Neste projeto foi desenvolvido uma carteira de controle de gastos com conversor 
 
 - [Rafael Souza](https://github.com/Rafael-Souza-97)
 
-## Referência
+## Referências
 
  - [Trybe](https://www.betrybe.com/)
  - [AwesomeAPI](https://docs.awesomeapi.com.br/api-de-moedas)
@@ -22,8 +22,8 @@ Neste projeto foi desenvolvido uma carteira de controle de gastos com conversor 
 
 - [React](https://pt-br.reactjs.org/)
 - [Redux](https://redux.js.org/)
-- [Javascript](https://www.javascript.com/)
-- [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+- [JavaScript](https://www.javascript.com/)
+- [CSS 3](https://www.w3.org/Style/CSS/Overview.en.html)
 - [JSX](https://pt-br.reactjs.org/docs/introducing-jsx.html)
 - [Thunk](https://redux.js.org/usage/writing-logic-thunks)
 - [API](https://economia.awesomeapi.com.br/json/all)
