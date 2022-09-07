@@ -32,7 +32,7 @@ os conhecimentos sobre React e Redux.
 - Zoom
 - Slack
 - VsCode
-- Git e GitHub
+- Git & GitHub
 - Linux - Ubuntu
 
 ### Testes
