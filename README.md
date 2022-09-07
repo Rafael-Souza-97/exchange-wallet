@@ -35,7 +35,7 @@ os conhecimentos sobre React e Redux.
 - Git & GitHub
 - Linux - Ubuntu
 
-### Testes
+## Testes
 
 - React Testing Library - RTL
 - Jest
