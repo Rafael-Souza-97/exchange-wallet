@@ -48,7 +48,7 @@ Neste projeto foi desenvolvido uma carteira de controle de gastos com conversor 
 - ###### Percentual de cumprimento de requisitos ([Trybe](https://www.betrybe.com/))- 100%
 - ###### Aplicação responsiva - ❌
 
-## Site 
+## Site / Deploy
 
 - https://exchange-wallet-bay.vercel.app/
 
