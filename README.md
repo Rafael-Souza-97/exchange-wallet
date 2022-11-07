@@ -42,11 +42,9 @@ Neste projeto foi desenvolvido uma carteira de controle de gastos com conversor 
 - [React Testing Library - RTL](https://testing-library.com/docs/react-testing-library/intro/)
 - [Jest](https://jestjs.io/pt-BR/)
 
-
 ## Infos Adicionais
 
 - ###### Percentual de cumprimento de requisitos ([Trybe](https://www.betrybe.com/))- 100%
-- ###### Aplicação responsiva - ❌
 
 ## Site / Deploy
 
