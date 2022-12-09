@@ -103,4 +103,3 @@ Abra [http://localhost:3000](http://localhost:3000) no seu navegador para visual
 ## Preview
 
 https://user-images.githubusercontent.com/99055008/188350971-f9665566-9b21-44f7-90f3-84c0e5c9c01c.mp4
-
